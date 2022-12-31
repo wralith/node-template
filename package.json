@@ -36,5 +36,27 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "verbose": false
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "root": true,
+    "ignorePatterns": [
+      "dist/*"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
   }
 }
